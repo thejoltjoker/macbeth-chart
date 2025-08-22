@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* ColorChecker/Macbeth Chart Colors */
+  /* Row 1: Natural colors */
+  --color-cc-dark-skin: #735244;
+  --color-cc-light-skin: #c29682;
+  --color-cc-blue-sky: #627a9d;
+  --color-cc-foliage: #576c43;
+  --color-cc-blue-flower: #8580b1;
+  --color-cc-bluish-green: #67bdaa;
+
+  /* Row 2: Miscellaneous colors */
+  --color-cc-orange: #d67e2c;
+  --color-cc-purplish-blue: #505ba6;
+  --color-cc-moderate-red: #c15a63;
+  --color-cc-purple: #5e3c6c;
+  --color-cc-yellow-green: #9dbc40;
+  --color-cc-orange-yellow: #e0a32e;
+
+  /* Row 3: Primary and secondary colors */
+  --color-cc-blue: #383d96;
+  --color-cc-green: #469449;
+  --color-cc-red: #af363c;
+  --color-cc-yellow: #e7c71f;
+  --color-cc-magenta: #bb5695;
+  --color-cc-cyan: #0885a1;
+
+  /* Row 4: Grayscale colors */
+  --color-cc-white: #f3f3f3;
+  --color-cc-neutral-8: #c8c8c8;
+  --color-cc-neutral-6-5: #a0a0a0;
+  --color-cc-neutral-5: #7a7a7a;
+  --color-cc-neutral-3-5: #555555;
+  --color-cc-black: #343434;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macbeth Chart</title>
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <div id="app" class="container mx-auto p-8">
+      <h1 class="text-3xl font-bold text-center mb-8">Macbeth Chart</h1>
+      <div class="grid grid-cols-6 grid-rows-4 gap-2 mx-auto">
+        <!-- Row 1: Natural colors -->
+        <div
+          class="aspect-square bg-cc-dark-skin rounded-sm relative group cursor-pointer"
+          data-color="#735244"
+          data-name="Dark Skin"
+        ></div>
+        <div
+          class="aspect-square bg-cc-light-skin rounded-sm relative group cursor-pointer"
+          data-color="#c29682"
+          data-name="Light Skin"
+        ></div>
+        <div
+          class="aspect-square bg-cc-blue-sky rounded-sm relative group cursor-pointer"
+          data-color="#627a9d"
+          data-name="Blue Sky"
+        ></div>
+        <div
+          class="aspect-square bg-cc-foliage rounded-sm relative group cursor-pointer"
+          data-color="#576c43"
+          data-name="Foliage"
+        ></div>
+        <div
+          class="aspect-square bg-cc-blue-flower rounded-sm relative group cursor-pointer"
+          data-color="#8580b1"
+          data-name="Blue Flower"
+        ></div>
+        <div
+          class="aspect-square bg-cc-bluish-green rounded-sm relative group cursor-pointer"
+          data-color="#67bdaa"
+          data-name="Bluish Green"
+        ></div>
+
+        <!-- Row 2: Miscellaneous colors -->
+        <div
+          class="aspect-square bg-cc-orange rounded-sm relative group cursor-pointer"
+          data-color="#d67e2c"
+          data-name="Orange"
+        ></div>
+        <div
+          class="aspect-square bg-cc-purplish-blue rounded-sm relative group cursor-pointer"
+          data-color="#505ba6"
+          data-name="Purplish Blue"
+        ></div>
+        <div
+          class="aspect-square bg-cc-moderate-red rounded-sm relative group cursor-pointer"
+          data-color="#c15a63"
+          data-name="Moderate Red"
+        ></div>
+        <div
+          class="aspect-square bg-cc-purple rounded-sm relative group cursor-pointer"
+          data-color="#5e3c6c"
+          data-name="Purple"
+        ></div>
+        <div
+          class="aspect-square bg-cc-yellow-green rounded-sm relative group cursor-pointer"
+          data-color="#9dbc40"
+          data-name="Yellow Green"
+        ></div>
+        <div
+          class="aspect-square bg-cc-orange-yellow rounded-sm relative group cursor-pointer"
+          data-color="#e0a32e"
+          data-name="Orange Yellow"
+        ></div>
+
+        <!-- Row 3: Primary and secondary colors -->
+        <div
+          class="aspect-square bg-cc-blue rounded-sm relative group cursor-pointer"
+          data-color="#383d96"
+          data-name="Blue"
+        ></div>
+        <div
+          class="aspect-square bg-cc-green rounded-sm relative group cursor-pointer"
+          data-color="#469449"
+          data-name="Green"
+        ></div>
+        <div
+          class="aspect-square bg-cc-red rounded-sm relative group cursor-pointer"
+          data-color="#af363c"
+          data-name="Red"
+        ></div>
+        <div
+          class="aspect-square bg-cc-yellow rounded-sm relative group cursor-pointer"
+          data-color="#e7c71f"
+          data-name="Yellow"
+        ></div>
+        <div
+          class="aspect-square bg-cc-magenta rounded-sm relative group cursor-pointer"
+          data-color="#bb5695"
+          data-name="Magenta"
+        ></div>
+        <div
+          class="aspect-square bg-cc-cyan rounded-sm relative group cursor-pointer"
+          data-color="#0885a1"
+          data-name="Cyan"
+        ></div>
+
+        <!-- Row 4: Grayscale colors -->
+        <div
+          class="aspect-square bg-cc-white rounded-sm relative group cursor-pointer"
+          data-color="#f3f3f3"
+          data-name="White"
+        ></div>
+        <div
+          class="aspect-square bg-cc-neutral-8 rounded-sm relative group cursor-pointer"
+          data-color="#c8c8c8"
+          data-name="Neutral 8"
+        ></div>
+        <div
+          class="aspect-square bg-cc-neutral-6-5 rounded-sm relative group cursor-pointer"
+          data-color="#a0a0a0"
+          data-name="Neutral 6.5"
+        ></div>
+        <div
+          class="aspect-square bg-cc-neutral-5 rounded-sm relative group cursor-pointer"
+          data-color="#7a7a7a"
+          data-name="Neutral 5"
+        ></div>
+        <div
+          class="aspect-square bg-cc-neutral-3-5 rounded-sm relative group cursor-pointer"
+          data-color="#555555"
+          data-name="Neutral 3.5"
+        ></div>
+        <div
+          class="aspect-square bg-cc-black rounded-sm relative group cursor-pointer"
+          data-color="#343434"
+          data-name="Black"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div
+      id="tooltip"
+      class="fixed bg-gray-900 text-white p-3 rounded-lg shadow-lg text-sm pointer-events-none opacity-0 transition-opacity duration-200 z-50 max-w-xs"
+    >
+      <div class="font-semibold mb-1" id="tooltip-name"></div>
+      <div class="space-y-1 text-xs">
+        <div>
+          <span class="text-gray-400">HEX:</span> <span id="tooltip-hex"></span>
+        </div>
+        <div>
+          <span class="text-gray-400">RGB:</span> <span id="tooltip-rgb"></span>
+        </div>
+        <div>
+          <span class="text-gray-400">HSL:</span> <span id="tooltip-hsl"></span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
